@@ -1,0 +1,46 @@
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.7rem;
+
+    &::before {
+        content : "";
+        position: absolute;
+        left    : 50%;
+        //top  : 0;
+        transform: translate(-50%, 0);
+        height  : 5px;
+        width   : 7.2rem;
+        border-top: 7px solid #e64a19;
+
+    }
+}
+
+.filter {
+    list-style: none;
+    margin-top: 6rem;
+
+    & li {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__item {
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+
+    
+
+    }
+
+    
+}

@@ -1,0 +1,276 @@
+.section-about {
+    padding: 10rem 0 11.8rem 0;
+    background-color: #fff;
+
+    @include respond(bp_900) {
+        padding: 10rem 5rem 11.8rem 5rem;
+    }
+
+    &__logo {
+        margin-bottom: 2.2rem;
+    }
+}
+
+.section-features {
+    padding: 8.3rem 0 11.2rem 0;
+    background-color: $color-secondary;
+
+    
+}
+
+.section-articles {
+    padding: 10.7rem 0 14.1rem 0;
+    background-color: #fff;
+
+    @include respond(bp_700) {
+        padding: 10.7rem 2rem 14.1rem 2rem;
+    }
+}
+
+.section-clients {
+    padding: 6.8rem 0 11rem 0;
+    background-color: $color-secondary;
+
+    .clients-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        max-width: 150rem;
+        margin: 0 auto;
+
+        .client-logo {
+            height: 15rem;
+            width: 17rem;
+            
+        }
+    }
+
+}
+
+.section-portfolio {
+    padding: 11.1rem 0 8rem 0;
+    background-color: #fff;
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6.6rem;
+
+
+        &__item {
+
+        }
+
+        &__photo {
+            width: 100%;
+        }
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: center;
+
+        &__btn {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            background-color: #cccccc;
+
+            &:hover,
+            &--active {
+                background-color: #e64a19;
+            }
+        }
+    }
+}
+
+.section-quote {
+    padding: 6.6rem 0;
+    background-color: $color-dark-1;
+
+    @include respond(bp_900) {
+        padding: 6.6rem 3rem;
+    }
+
+    .quote-img {
+        margin-bottom: 2.6rem;
+    }
+}
+
+.section-team {
+    padding: 10rem 0 13.5rem 0;
+    background-color: #fff;
+
+    @include respond(bp_700) {
+        padding: 10rem 2rem 13.5rem 2rem;
+    }
+}
+
+.section-stats {
+    padding: 10rem 0 13.5rem 0;
+    background-image: linear-gradient(rgba($color-primary, .5)
+                                    , rgba($color-primary, .5))
+                                    , url(../img/bg-stats.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    .stats {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        max-width: 83rem;
+        margin: 0 auto;
+
+        text-align: center;
+        
+        padding: 6.5rem 0;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            width: 7.5rem;
+            transform: translate(-50%, 0);
+            border-bottom: 7px solid #e64a19;
+
+        }
+
+        &__left {
+            flex: 0 0 50%;
+            
+            //background-color: orangered;
+        }
+
+        &__right {
+            flex: 1;
+            //background-color: yellowgreen;
+        }
+
+        &__text-box {
+
+            &:not(:last-child) {
+                margin-bottom: 5.5rem;
+            }
+
+        }
+
+        &__number {
+            font-size: 2.7rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #fff;
+
+            position: relative;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 7.5rem;
+                transform: translate(-50%, 0);
+                border-bottom: 4px solid #4d4c4b;
+
+            }
+        }
+
+        &__description {
+            font-size: 2.4rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        
+
+    }
+}
+
+.section-news {
+    padding: 11rem 0;
+    background-color: #fff;
+}
+
+.section-news-feed {
+    padding: 7.5rem;
+    background-color: $color-secondary;
+
+    .feed-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        max-width: 100rem;
+        margin: 0 auto;
+
+
+    }
+
+    .feed {
+        border-left: 6px solid black;
+        padding: 1.4rem 1.8rem;
+        text-align: left;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        &__title {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        &__date {
+            font-size: 1.4rem;
+            color: $color-dark-3;
+        }
+    }
+}
+
+.section-twitter {
+    padding: 7.5rem 0;
+    background-color: #fff;
+    text-align: center;
+
+    @include respond(bp_800) {
+        padding: 7.5rem 2rem;
+    }
+
+    .tweet {
+        max-width: 85rem;
+        margin: 0 auto;
+    }
+
+    .twitter-logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5.8rem;
+    }
+
+    .tweet-author-img {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+
+        margin-bottom: 4.3rem;
+    }
+
+    .twitter-handle {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+
+}
+

@@ -1,0 +1,24 @@
+.header {
+    height: 100vh;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+
+    &__text-box {
+        text-align: right;
+        max-width: 55rem;
+        top: 35%;
+        right: 10%;
+        position: absolute;
+
+        @include respond(bp_700) {
+            max-width: none;
+            text-align: center;
+            right: 0;
+            padding: 0 3rem;
+        }
+    }
+}

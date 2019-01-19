@@ -1,0 +1,33 @@
+.feature-box-container {
+    margin: 0 auto;
+    max-width: 150rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include respond(bp_800) {
+        flex-direction: column;
+    }
+}
+
+.feature-box {
+    max-width: 26.9rem;
+
+    @include respond(bp_800) {
+        
+        &:not(:last-child) {
+            margin-bottom: 4rem; 
+        }
+    }
+
+    
+
+    &__text-box {
+        //max-width: 26.9rem;
+    }
+
+    &__logo {
+        margin-bottom: 3rem;
+    }
+}
+
